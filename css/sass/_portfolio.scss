@@ -1,0 +1,29 @@
+/* start portfolio */ 
+.portfolio{
+    margin: 100px 0;
+    background-color: $headColor;
+    padding: 50px 0 40px;
+    .head{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        h4{
+            @include headTitle;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            &::before,&::after{
+                background-color: #fff;
+            }
+        }
+        h1{
+            @include secHead;
+            color: #fff;
+        }
+    }
+    .projects{
+        img{
+            cursor: pointer;
+        }
+    }
+}
+/* end portfolio */ 

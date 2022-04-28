@@ -1,0 +1,12 @@
+body{
+    overflow-x: hidden;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: $mainFamily;
+    color: #777;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headFamily;
+    color: $headColor;
+}

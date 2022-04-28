@@ -1,0 +1,25 @@
+/* start foooter */ 
+.footer{
+    background-color: $mainColor;
+    padding: 20px 0;
+    .content{
+        p{
+            color: #ddd;
+            margin-bottom: 6px;
+        }
+        .social-media{
+            a{
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background-color: #fff;
+                display: inline-block;
+                i{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+/* end footer */ 

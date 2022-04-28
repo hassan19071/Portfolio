@@ -1,0 +1,105 @@
+/* strat header */
+.header-section{
+    background-color: $mainColor;
+    .head-top{
+        background-color: $headColor;
+        padding: 9px 0;
+        color: #fff;
+    }
+    nav{
+        background-color: #fff;
+        top: 0;
+        z-index: 2000;
+        transition: .5s;
+        @media (max-width:991px) {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+        }
+        .navbar-brand{
+            h1{
+                font-size:calc(1.5rem + 1.5vw);
+                span{
+                    color: $mainColor;
+                    font-style: italic;
+                    font-weight: 800;
+                }
+            }
+        }
+        .navbar-nav{
+            @media (max-width:992px) {
+                padding-top: 12px;
+            }
+            li{
+                @media (min-width:992px) {
+                    &:not(:first-of-type){
+                        margin-left: 20px !important;
+                    }
+                }
+                a{
+                    @media (min-width:992px) {
+                        padding: 22px 0 20px!important;
+                    }
+                    text-transform: uppercase;
+                    color: #000 !important;
+                    font-weight: 500;
+                    border-bottom: 2px solid transparent;
+                    transition: .3s;
+                    &.active,&:hover{
+                        color: $mainColor !important;
+                        border-bottom: 2px solid $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .head-text{
+        padding: 100px 0;
+        @media (min-width:992px) {
+            padding: 150px 0;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        p{
+            color: rgb(211, 210, 210);
+            margin: 20px 0;
+            text-transform: capitalize;
+            width: 80%;
+        }
+        button{
+            border: none;
+            background-color: #fff;
+            padding: 10px 25px;
+            color: $mainColor;
+            font-weight: 500;
+            position: relative;
+            span{
+                position: relative;
+                z-index: 3;
+                transition: .4s;
+            }
+            .overlay{
+                    position: absolute;
+                    background-color: $headColor;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    transition: .4s;
+                    width: 0%;
+            }
+            &:hover{
+                .overlay{
+                    width: 100%;
+                }
+                span{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/* end header */ 

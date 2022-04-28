@@ -1,0 +1,42 @@
+@mixin headTitle() {
+            font-weight: 600;
+            color: $mainColor;
+            text-transform: uppercase;
+            position: relative;
+            width: fit-content;
+            font-size: 22px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 2px;
+                background-color: $mainColor;
+                right: -10px;
+                top: 30%;
+                transform: translateX(100%);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 2px;
+                background-color: $mainColor;
+                right: -10px;
+                bottom: 30%;
+                transform:translateX(100%);
+            }
+}
+
+@mixin secHead {
+           font-weight: 800;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: capitalize;
+            @media (max-width:991px) {
+                width: 70%;
+            }
+            @media (max-width:720px) {
+                width: 80%;
+            }
+}

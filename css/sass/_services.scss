@@ -1,0 +1,63 @@
+/* start services */ 
+.services{
+    margin: 100px 0;
+    .head{
+        h4{
+            @include headTitle;
+            margin: auto;
+        }
+        h1{
+            @include secHead;
+        }
+    }
+    .servs{
+        margin-top: 50px;
+        .content{
+            padding:30px 20px;
+            border-radius: 10px;
+            transition: .3s;
+            &:hover{
+                background-color: $mainColor;
+                .icon{
+                    background-color: #fff;
+                    i{
+                        color: $mainColor;
+                    }
+                }
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+            .icon{
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                background-color: $mainColor;
+                border-radius: 50%;
+                margin: 0 auto 15px;
+                transition: .3s;
+                i{
+                    color: #fff;
+                    font-size: 20px;
+                    transition: .3s;
+                }
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                transition: .3s;
+            }
+            p{
+                padding: 0 20px;
+                transition: .3s;
+            }
+        }
+    }
+}
+/* end services */ 
